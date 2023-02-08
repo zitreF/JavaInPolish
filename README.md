@@ -6,7 +6,7 @@ Java translator from polish to english, shitty af.
 ```java
 publiczna klasa Example {
     publiczna statyczna próżnia main(String[] args) {
-        sieć alfabet = "abcdefghijklmnopqrstuvwxyz"
+        sieć alfabet = "abcdefghijklmnopqrstuvwxyz";
         jeżeli (alfabet.równaSię("alfabet")) {
             System.out.drukujln("prawda");
         } w przeciwnym razie {
