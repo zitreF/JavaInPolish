@@ -1,10 +1,11 @@
-publiczna klasa Example {
-    publiczna statyczna próżnia main(String[] args) {
-        sieć alfabet = "abcdefghijklmnopqrstuvwxyz"
-        jeżeli (alfabet.równaSię("alfabet")) {
-            System.out.drukujln("prawda");
+public class Example {
+    public static void main(String[] args) {
+        String alfabet = "abcdefghijklmnopqrstuvwxyz";
+        boolean b = fałsz;
+        jeżeli (alfabet.equals("alfabet")) {
+            System.out.println(true);
         } w przeciwnym razie {
-            System.out.drukujln("falsz");
+            System.out.println("fałsz nie kiedyś"); boolean bambiszon = fałsz;
         }
     }
 }

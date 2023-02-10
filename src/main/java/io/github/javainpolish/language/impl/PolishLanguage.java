@@ -2,8 +2,12 @@ package io.github.javainpolish.language.impl;
 
 import io.github.javainpolish.language.Language;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public final class PolishLanguage implements Language {
 
@@ -39,10 +43,16 @@ public final class PolishLanguage implements Language {
         return dictionary.getOrDefault(context, context);
     }
 
+    @Override
     public String translateLine(String context) {
-        for (Map.Entry<String, String> entry : dictionary.entrySet()) {
-            context = context.replaceAll(entry.getKey(), entry.getValue());
+        String[] parts = context.split("\"");
+        for (int i = 0; i < parts.length; i++) {
+            if (i % 2 == 0) {
+                for (Map.Entry<String, String> entry : dictionary.entrySet()) {
+                    parts[i] = parts[i].replaceAll(entry.getKey(), entry.getValue());
+                }
+            }
         }
-        return context;
+        return String.join("\"", parts);
     }
 }
