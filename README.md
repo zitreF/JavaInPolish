@@ -1,5 +1,7 @@
 # Java In Polish
-Java translator from polish to english, shitty af.
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71133191/218101161-2ee1d3da-a309-415a-8d77-1d904edb08d4.png" width=150>
+</p>
 
 # Example code in polish:
 
